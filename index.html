@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Gestión - Login</title>
-    <meta name="description" content="Sistema de gestión con control de roles y usuarios">
+    <meta name="description" content="Sistema de gestión con control de usuarios y roles">
     <meta name="keywords" content="login, dashboard, gestión, usuarios">
     
     <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
@@ -17,33 +17,21 @@
     @layer theme {
         :root {
             --primary-color: #2563eb;
-            --secondary-color: #1e40af;
-            --accent-color: #60a5fa;
+            --secondary-color: #1e293b;
         }
     }
 
     @layer base {
         body {
-            margin: 0;
-            padding: 0;
             font-family: 'Times New Roman', Times, serif;
-        }
-    }
-
-    @layer utilities {
-        .bg-stars {
-            background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
         }
     }
     </style>
 </head>
-<body>
+<body class="min-h-screen" style="background-image: url('https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?q=80&w=2013'); background-size: cover; background-position: center;">
     <div id="root"></div>
-    <script type="text/babel" src="components/Logo.js"></script>
     <script type="text/babel" src="utils/auth.js"></script>
+    <script type="text/babel" src="components/Logo.js"></script>
     <script type="text/babel" src="app.js"></script>
 </body>
 </html>

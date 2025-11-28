@@ -29,7 +29,7 @@ class ErrorBoundary extends React.Component {
   }
 }
 
-function UsuariosApp() {
+function ContactosApp() {
   try {
     const [sidebarOpen, setSidebarOpen] = React.useState(true);
     const [currentUser, setCurrentUser] = React.useState(null);
@@ -46,18 +46,18 @@ function UsuariosApp() {
     if (!currentUser) return null;
 
     return (
-      <div className="min-h-screen" data-name="usuarios-app" data-file="usuarios-app.js">
+      <div className="min-h-screen" data-name="contactos-app" data-file="contactos-app.js">
         <Sidebar isOpen={sidebarOpen} toggleSidebar={() => setSidebarOpen(!sidebarOpen)} />
         <div className={`transition-all duration-300 ${sidebarOpen ? 'ml-64' : 'ml-0'}`}>
           <Topbar user={currentUser} />
           <main className="p-6">
-            <UserTable />
+            <ContactList />
           </main>
         </div>
       </div>
     );
   } catch (error) {
-    console.error('UsuariosApp component error:', error);
+    console.error('ContactosApp component error:', error);
     return null;
   }
 }
@@ -65,6 +65,6 @@ function UsuariosApp() {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ErrorBoundary>
-    <UsuariosApp />
+    <ContactosApp />
   </ErrorBoundary>
 );

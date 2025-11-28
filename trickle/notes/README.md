@@ -1,65 +1,39 @@
-# Sistema de Gestión - Documentación
+# Sistema de Gestión con Control de Usuarios
 
-## Descripción General
-Sistema de gestión web con control de acceso basado en roles (superusuario, admin, usuario). Incluye autenticación, dashboard interactivo y gestión de usuarios.
-
-## Estructura del Proyecto
-
-### Páginas
-- **index.html**: Página de inicio de sesión
-- **dashboard.html**: Panel principal con estadísticas y gráficos
-- **usuarios.html**: Gestión y visualización de usuarios
-
-### Componentes
-- **Logo.js**: Logo tipo cubo de Geometry Dash con animación
-- **Sidebar.js**: Barra lateral colapsable con navegación
-- **Topbar.js**: Barra superior con notificaciones y perfil
-- **StatsCard.js**: Tarjetas de estadísticas
-- **Calendar.js**: Calendario interactivo
-- **ActivityChart.js**: Gráfico de actividad con Chart.js
-- **DocumentPanel.js**: Panel de gestión de documentos
-- **UserCard.js**: Tarjeta de usuario
-
-### Utilidades
-- **auth.js**: Sistema de autenticación y gestión de usuarios
-
-## Usuarios de Prueba
-
-### Superusuarios
-- super1 / super123
-- super2 / super123
-
-### Administradores
-- admin1 / admin123
-- admin2 / admin123
-
-### Usuarios
-- user1 / user123
-- user2 / user123
+Sistema completo de gestión con autenticación, roles de usuario y dashboard interactivo.
 
 ## Características
 
-### Diseño
-- Fuente: Times New Roman con negritas
-- Color primario: Azul (#2563eb)
-- Fondos: Imágenes de cielo estrellado
-- Contenedores transparentes con efecto blur
+- **Login con fondo de estrellas**: Formulario transparente con vista de cielo estrellado
+- **Control de roles**: Superusuario, Administrador y Usuario
+- **Dashboard interactivo**: Tarjetas estadísticas, calendario, gráfico de actividad y panel de documentos
+- **Sidebar colapsable**: Navegación lateral con logo de cubo estilo Geometry Dash
+- **Topbar**: Notificaciones interactivas y perfil de usuario
 
-### Funcionalidades
-- Autenticación por roles
-- Dashboard con 4 tarjetas estadísticas (rojo, azul, verde, amarillo)
-- Calendario navegable
-- Gráfico de actividad del usuario
-- Panel de documentos con estados
-- Notificaciones interactivas
-- Sidebar colapsable
-- Gestión de usuarios
+## Usuarios del Sistema
+
+### Superusuarios
+- Usuario: `super1` / Contraseña: `super123`
+- Usuario: `super2` / Contraseña: `super123`
+
+### Administradores
+- Usuario: `admin1` / Contraseña: `admin123`
+- Usuario: `admin2` / Contraseña: `admin123`
+
+### Usuarios Normales
+- Usuario: `user1` / Contraseña: `user123`
+- Usuario: `user2` / Contraseña: `user123`
+
+## Componentes del Dashboard
+
+1. **Tarjetas Estadísticas**: 4 tarjetas con métricas clave (Usuarios, Documentos, Actividad, Notificaciones)
+2. **Calendario**: Navegación por meses con visualización de días
+3. **Gráfico de Actividad**: Gráfico de línea semanal
+4. **Panel de Documentos**: Tabla con estado y fecha de modificación
 
 ## Tecnologías
+
 - React 18
-- Tailwind CSS
+- TailwindCSS
 - Chart.js
 - Lucide Icons
-
-## Año del Proyecto
-© 2025
